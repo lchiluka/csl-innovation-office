@@ -1,0 +1,85 @@
+/* === RESET + TOKENS === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Fonts */
+  --font-display: 'Cabinet Grotesk', sans-serif;
+  --font-body: 'Satoshi', sans-serif;
+
+  /* Warm Office Palette */
+  --floor-light: #C4A574;
+  --floor-dark: #B8956A;
+  --wall-light: #E8DFD0;
+  --wall-dark: #D9CFC0;
+  --furniture-wood: #6B4E3D;
+  --chair-blue: #4A7FB5;
+  --plant-green: #5A9E5A;
+
+  /* UI Colors */
+  --bg-outside: #1a1a2e;
+  --bg-surface: rgba(20, 20, 40, 0.85);
+  --bg-panel: rgba(20, 20, 40, 0.92);
+  --text-light: #fff;
+  --text-muted: #9a9ab0;
+  --text-dark: #2a2a2a;
+
+  /* Status Colors */
+  --status-green: #6DAA45;
+  --status-yellow: #E8C547;
+  --status-red: #DD6974;
+  --status-gray: #666;
+
+  /* Accent */
+  --accent-teal: #4F98A3;
+  --accent-purple: #7B68EE;
+
+  /* Glow */
+  --glow-active: rgba(79, 152, 163, 0.20);
+  --glow-complete: rgba(109, 170, 69, 0.15);
+
+  /* Spacing */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+
+  /* Sizes */
+  --control-bar-h: 48px;
+  --agent-bar-h: 44px;
+  --ticker-h: 32px;
+  --footer-h: 28px;
+  --side-panel-w: 300px;
+
+  /* Borders */
+  --border-subtle: rgba(255,255,255,0.08);
+  --border-light: rgba(255,255,255,0.12);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-outside);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+a { color: var(--accent-teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
